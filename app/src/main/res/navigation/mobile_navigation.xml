@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_transactions">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_transactions" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.ledger_companion.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_fileread"
+        android:name="com.example.ledger_companion.ui.fileread.FilereadFragment"
+        android:label="@string/menu_fileread"
+        tools:layout="@layout/fragment_fileread" />
 
     <fragment
         android:id="@+id/nav_tools"
@@ -40,4 +40,13 @@
         android:name="com.example.ledger_companion.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="com.example.ledger_companion.SettingsActivity"
+        android:label="SettingsActivity" />
+    <activity
+        android:id="@+id/addTransactionActivity"
+        android:name="com.example.ledger_companion.AddTransactionActivity"
+        android:label="activity_add_transaction"
+        tools:layout="@layout/activity_add_transaction" />
 </navigation>
